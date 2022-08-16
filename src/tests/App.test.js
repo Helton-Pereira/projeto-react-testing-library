@@ -22,7 +22,7 @@ describe('Testa o componente App.js', () => {
     expect(linkAbout).toBeInTheDocument();
     userEvent.click(linkAbout);
 
-    const { pathname} = history.location;
+    const { pathname } = history.location;
     expect(pathname).toBe('/about');
   });
   test('Verifica se existe um link com texto Favorite Pokémons ', () => {
