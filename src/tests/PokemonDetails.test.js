@@ -51,7 +51,7 @@ describe('Testa o componente PokemonDetails', () => {
   test('Verifica a checkbox para favoritar pokemons', () => {
     const { history } = renderWithRouter(<App />);
 
-    history.push('/pokemons/25');
+    history.push('/pokemons/4');
 
     const isFavoritePokemon = screen.getByRole('checkbox', {
       name: /Pokémon favoritado?/i });
